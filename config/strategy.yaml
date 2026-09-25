@@ -1,0 +1,12 @@
+timeframe: '1m'
+indicators:
+  sma_period: 9
+  rsi_period: 14
+entry:
+  ltp: {enabled: true, min: 5, max: 50}
+  rsi: {enabled: true, operator: '>', value: 70}
+  rsi_difference: {enabled: true, operator: '<=', value: 15}
+  sma_greater_than_previous: {enabled: true, lookback: 10}
+  gamma_greater_than_previous: {enabled: true, lookback: 10}
+  delta_absolute_greater_than_previous: {enabled: true, lookback: 10}
+  spot_strike_distance: {enabled: true, operator: '<', value: 125}
